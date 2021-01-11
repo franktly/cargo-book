@@ -1,2 +1,2 @@
 # cargo-book
-Rust Cargo Book Pratice
+Rust Cargo Book Practice
