@@ -1,0 +1,28 @@
+cargo: rerun-if-changed=build.rs
+TARGET = Some("x86_64-unknown-linux-gnu")
+OPT_LEVEL = Some("0")
+HOST = Some("x86_64-unknown-linux-gnu")
+CC_x86_64-unknown-linux-gnu = None
+CC_x86_64_unknown_linux_gnu = None
+HOST_CC = None
+CC = None
+CFLAGS_x86_64-unknown-linux-gnu = None
+CFLAGS_x86_64_unknown_linux_gnu = None
+HOST_CFLAGS = None
+CFLAGS = None
+CRATE_CC_NO_DEFAULTS = None
+DEBUG = Some("true")
+CARGO_CFG_TARGET_FEATURE = Some("fxsr,sse,sse2")
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-o" "/home/ubuntu/Documents/cargo-book/build_scripts/target/debug/build/build_scripts-b8bbafc3c9beaa4e/out/src/hello.o" "-c" "src/hello.c"
+exit code: 0
+AR_x86_64-unknown-linux-gnu = None
+AR_x86_64_unknown_linux_gnu = None
+HOST_AR = None
+AR = None
+running: "ar" "cq" "/home/ubuntu/Documents/cargo-book/build_scripts/target/debug/build/build_scripts-b8bbafc3c9beaa4e/out/libhello.a" "/home/ubuntu/Documents/cargo-book/build_scripts/target/debug/build/build_scripts-b8bbafc3c9beaa4e/out/src/hello.o"
+exit code: 0
+running: "ar" "s" "/home/ubuntu/Documents/cargo-book/build_scripts/target/debug/build/build_scripts-b8bbafc3c9beaa4e/out/libhello.a"
+exit code: 0
+cargo:rustc-link-lib=static=hello
+cargo:rustc-link-search=native=/home/ubuntu/Documents/cargo-book/build_scripts/target/debug/build/build_scripts-b8bbafc3c9beaa4e/out
+cargo: return-if-changed=src/hello.c

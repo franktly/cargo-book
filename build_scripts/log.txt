@@ -1,0 +1,24 @@
+warning: function is never used: `rust_build_test`
+  --> build.rs:39:4
+   |
+39 | fn rust_build_test() {
+   |    ^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` on by default
+
+warning: 1 warning emitted
+
+   Compiling build_scripts v0.1.0 (/home/ubuntu/Documents/cargo-book/build_scripts)
+error: linking with `cc` failed: exit code: 1
+  |
+  = note: "cc" "-Wl,--as-needed" "-Wl,-z,noexecstack" "-m64" "-Wl,--eh-frame-hdr" "-L" "/home/ubuntu/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib" "/home/ubuntu/Documents/cargo-book/build_scripts/target/debug/deps/build_scripts-af68ff350ec823e3.10c2cmz4rvtbsfru.rcgu.o" "/home/ubuntu/Documents/cargo-book/build_scripts/target/debug/deps/build_scripts-af68ff350ec823e3.1f1wbob74yf5wd8u.rcgu.o" "/home/ubuntu/Documents/cargo-book/build_scripts/target/debug/deps/build_scripts-af68ff350ec823e3.2gfx55ts2iqqthsz.rcgu.o" "/home/ubuntu/Documents/cargo-book/build_scripts/target/debug/deps/build_scripts-af68ff350ec823e3.2tdrkm3034nlnz3p.rcgu.o" "/home/ubuntu/Documents/cargo-book/build_scripts/target/debug/deps/build_scripts-af68ff350ec823e3.2vsxbtxyanosnlev.rcgu.o" "/home/ubuntu/Documents/cargo-book/build_scripts/target/debug/deps/build_scripts-af68ff350ec823e3.4juz5jtnqt63sllp.rcgu.o" "/home/ubuntu/Documents/cargo-book/build_scripts/target/debug/deps/build_scripts-af68ff350ec823e3.55ja5pn7vx2prv3k.rcgu.o" "-o" "/home/ubuntu/Documents/cargo-book/build_scripts/target/debug/deps/build_scripts-af68ff350ec823e3" "/home/ubuntu/Documents/cargo-book/build_scripts/target/debug/deps/build_scripts-af68ff350ec823e3.2rtz22xxn3618j8i.rcgu.o" "-Wl,--gc-sections" "-pie" "-Wl,-zrelro" "-Wl,-znow" "-nodefaultlibs" "-L" "/home/ubuntu/Documents/cargo-book/build_scripts/target/debug/deps" "-L" "/home/ubuntu/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib" "-Wl,--start-group" "-Wl,-Bstatic" "/home/ubuntu/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libstd-25c6acf8063a3802.rlib" "/home/ubuntu/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libpanic_unwind-539f13c9442f1597.rlib" "/home/ubuntu/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libminiz_oxide-37db28e905edb56b.rlib" "/home/ubuntu/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libadler-9ef2480568df55af.rlib" "/home/ubuntu/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libobject-1e0f0992cdbecd66.rlib" "/home/ubuntu/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libaddr2line-6c8e02b8fedc1e5f.rlib" "/home/ubuntu/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libgimli-807e5ad203594490.rlib" "/home/ubuntu/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/librustc_demangle-083fce1bea11612a.rlib" "/home/ubuntu/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libhashbrown-1af568081add9042.rlib" "/home/ubuntu/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/librustc_std_workspace_alloc-1395b54a3b3f45bf.rlib" "/home/ubuntu/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libunwind-caba820045f178d5.rlib" "/home/ubuntu/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libcfg_if-512eb53291f6de7e.rlib" "/home/ubuntu/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/liblibc-5efacc5025f9f3d8.rlib" "/home/ubuntu/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/liballoc-9c4002b5f79ba0e1.rlib" "/home/ubuntu/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/librustc_std_workspace_core-90996f4879673567.rlib" "/home/ubuntu/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libcore-9ea09a899c3eda46.rlib" "-Wl,--end-group" "/home/ubuntu/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libcompiler_builtins-ef2408da76957905.rlib" "-Wl,-Bdynamic" "-lgcc_s" "-lutil" "-lrt" "-lpthread" "-lm" "-ldl" "-lc"
+  = note: /home/ubuntu/Documents/cargo-book/build_scripts/target/debug/deps/build_scripts-af68ff350ec823e3.2tdrkm3034nlnz3p.rcgu.o: In function `build_scripts::main':
+          /home/ubuntu/Documents/cargo-book/build_scripts/src/main.rs:9: undefined reference to `hello'
+          collect2: error: ld returned 1 exit status
+          
+
+error: aborting due to previous error
+
+error: could not compile `build_scripts`
+
+To learn more, run the command again with --verbose.

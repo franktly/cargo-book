@@ -1,0 +1,1 @@
+/home/ubuntu/Documents/cargo-book/build_scripts/target/debug/build_scripts: /home/ubuntu/Documents/cargo-book/build_scripts/build.rs /home/ubuntu/Documents/cargo-book/build_scripts/src/main.rs /home/ubuntu/Documents/cargo-book/build_scripts/target/debug/build/build_scripts-97336eb587fd72a0/out/hello.rs

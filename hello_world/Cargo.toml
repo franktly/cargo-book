@@ -1,0 +1,12 @@
+[package]
+name = "hello_world"
+version = "0.1.0"
+authors = ["dreamflytly <dreamflytly@163.com>"]
+edition = "2018"
+#autobins = false
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+time = "0.1.12"
+regex = "0.1.41"

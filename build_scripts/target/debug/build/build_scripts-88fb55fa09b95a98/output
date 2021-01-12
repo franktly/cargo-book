@@ -1,0 +1,3 @@
+cargo: rustc-link-search=native=/home/ubuntu/Documents/cargo-book/build_scripts/target/debug/build/build_scripts-88fb55fa09b95a98/out
+cargo: rustc-link-lib=static=hello
+cargo: rerun-if-changed=src/hello.c
